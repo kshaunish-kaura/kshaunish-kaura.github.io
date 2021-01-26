@@ -1,26 +1,5 @@
 <html>
 <head>
-    <h1>FUN WITH MEASUREMENTS for Class 4D</h1>
-
-<p>
-Enter your Name:
-    <input type="text" id="name1" onblur="mycoding3()">
-</p>
-
-<p>
-Convert <input type="text" id="number1" onblur="mycoding1()"> metres into centimetres
-    <br>Answer <input type="text" id="answer1" disabled>
-</p>
-    
-    <p>
-Convert <input type="text" id="number2" onblur="mycoding2()"> centimetres into metres
-    <br>Answer <input type="text" id="answer2" disabled>
-</p>
- 
-  
-    
-<body>
-
     <script>
         function mycoding1()
         {
@@ -38,10 +17,33 @@ Convert <input type="text" id="number2" onblur="mycoding2()"> centimetres into m
         {
          x=document.getElementById("name1").value;
          if(x=="")
-             x="please enter your name";
-            alert("Hello "+x);
+          x="please enter your name";
+          alert("Hello "+x);
         }
     </script>
+  </head>
+ 
+  
+    
+<body>
+
+<h1>FUN WITH MEASUREMENTS for Class 4D</h1>
+
+<p>
+Enter your Name:
+    <input type="text" id="name1" onblur="mycoding3()">
+</p>
+
+<p>
+Convert <input type="text" id="number1" onblur="mycoding1()"> Meters into Centimeters
+    <br>Answer <input type="text" id="answer1" disabled>
+</p>
+    
+    <p>
+Convert <input type="text" id="number2" onblur="mycoding2()"> Centimeters into Meters
+    <br>Answer <input type="text" id="answer2" disabled>
+</p>
+    
     
 </body>    
 
