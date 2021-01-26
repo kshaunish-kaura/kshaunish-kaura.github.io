@@ -1,0 +1,36 @@
+<html>
+<head>
+    <h1>FUN WITH FRACTIONS for Class 4D</h1>
+
+<p>
+Enter your Name:
+    <input type="text" id="abc">
+</p>
+
+<p>
+Convert <input type="text" id="number1" onblur="myCoding()"> metres into centimeters
+    <br>Answer <input type="text" id="answer1" disabled>
+</p>
+    
+    <p>
+Convert <input type="text" id="number2"> centimeter into meters
+    <br>Answer <input type="text" disabled>
+</p>
+ 
+    
+    
+    
+<body>
+
+    <script>
+        function myCoding()
+        {
+        x=document.getElementById("number1").value;
+            y=x*100;
+            answer1.value=y;
+        }
+    </script>
+    
+</body>    
+
+</html>
