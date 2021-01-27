@@ -1,50 +1,108 @@
 <html>
 <head>
-    <script>
-        function mycoding1()
-        {
-        x=document.getElementById("number1").value;
-            y=x*100;
-            answer1.value=y;
-        }
-        function mycoding2()
-        {
-            x=document.getElementById("number2").value;
-            y=x/100;
-            answer2.value=y;
-        }
-        function mycoding3()
-        {
-         x=document.getElementById("name1").value;
-         if(x=="")
-          x="please enter your name";
-          alert("Hello "+x);
-        }
-    </script>
-  </head>
- 
-  
-    
-<body>
-
-<h1>Fun With MEASUREMENTS : By Kshaunish Kaura</h1>
+<h1> FUN WITH MEASUREMENT </h1>
 
 <p>
-Enter your Name:
-    <input type="text" id="name1" onblur="mycoding3()">
+Enter Your Name:
+<input type= "text" id="studentname" onblur= "mycoding3()">
 </p>
 
 <p>
-Convert <input type="text" id="number1" onblur="mycoding1()"> Meters into Centimeters
-    <br>Answer <input type="text" id="answer1" disabled>
+convert <input type= "text" id= "number1" onblur= "mycoding()"> meters into centimeters
+<br>
+answer <input type= "text" id= "answer1" disabled>
 </p>
-    
-    <p>
-Convert <input type="text" id="number2" onblur="mycoding2()"> Centimeters into Meters
-    <br>Answer <input type="text" id="answer2" disabled>
-</p>
-    
-    
-</body>    
 
+<p>
+convert <input type= "text" id= "number2" onblur= "mycoding1()"> centimeters into meters
+<br>
+answer <input type= "text" id= "answer2" disabled>
+</p>
+
+<p>
+convert <input type= "text" id= "number3" onblur= "mycoding4()"> meters into kilometers
+<br>
+answer <input type= "text" id= "answer3" disabled>
+</p>
+
+
+<p>
+convert <input type= "text" id= "number4" onblur= "mycoding5()"> kilometers into meters
+<br>
+answer <input type= "text" id= "answer4" disabled>
+</p>
+
+<p>
+convert <input type= "text" id= "number5" onblur= "mycoding6()"> grams into kilograms
+<br>
+answer <input type= "text" id= "answer5" disabled>
+</p>
+
+<p>
+convert <input type= "text" id= "number6" onblur= "mycoding7()"> kilograms into grams
+<br>
+answer <input type= "text" id= "answer6" disabled>
+</p>
+
+
+<script>
+
+function mycoding()
+{
+x= document.getElementById("number1").value;
+y= x*100;
+answer1.value= y;
+}
+
+
+function mycoding1()
+{
+x= document.getElementById("number2").value;
+y= x/100;
+answer2.value= y;
+}
+
+
+function mycoding4()
+{
+x= document.getElementById("number3").value;
+y= x/1000;
+answer3.value= y;
+}
+
+
+function mycoding3()
+{
+x="";
+x=document.getElementById("studentname").value;
+if(x=="")
+x="please enter your name";
+alert("hello "+x);
+}
+
+
+function mycoding6()
+{
+x= document.getElementById("number5").value;
+y= x/1000;
+answer5.value= y;
+}
+
+function mycoding7()
+{
+x= document.getElementById("number6").value;
+y= x*1000;
+answer6.value= y;
+}
+
+function mycoding5()
+{
+x= document.getElementById("number4").value;
+y= x*1000;
+answer4.value= y;
+}
+</script>
+
+</head>
 </html>
+
